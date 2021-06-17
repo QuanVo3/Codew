@@ -1,0 +1,11 @@
+#counter{
+    position: absolute;
+    left: 40%;
+    top:50%;
+}
+.button{
+    border-radius: 0px;
+}
+#textBox{
+    text-align: center;
+}
