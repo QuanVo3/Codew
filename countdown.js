@@ -6,8 +6,9 @@ function Countdown() {
         document.getElementById("content").innerHTML = "Invalid Number!";
     }
     else {
-        let Time = a * 1000;
-        let a = setInterval(number-- , Time);
+        let Time = (number * 1000)+1000;
+        let a = setInterval(() => {document.getElementById("content").innerHTML = number;number--;},1000);
+        setTimeout(() => {clearInterval(a)},Time);
         console.log(number)
     }
 }
