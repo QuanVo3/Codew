@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <div id="Wrapper">
+        <table id="frame">
+            <tr id="frameDecor">
+                <th id="result" colspan="4">0</th>
+            </tr>
+            <tr class="frameDecor">
+                <td class="frameDecor"><button class="button" onkeydown="CE()">CE</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="C()">C</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="backSpace()"><i class="fas fa-backspace"></i></button>
+                </td>
+                <td class="frameDecor"><button class="button" onkeydown="split()">/</button></td>
+            </tr>
+            <tr class="frameDecor">
+                <td class="frameDecor"><button class="button" onkeydown="num7()">7</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="num8()">8</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="num9()">9</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="multiply()">X</button></td>
+            </tr>
+            <tr class="frameDecor">
+                <td class="frameDecor"><button class="button" onkeydown="num4()">4</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="num5()">5</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="num6()">6</button></td>
+                <td class="frameDecor"><button class="button" onkeydown="minus()">-</button></td>
+            </tr>
+            <tr class="frameDecor">
+                <td class="frameDecor"><button class="button" onkeydown = "num1()">1</button></td>
+                <td class="frameDecor"><button class="button" onkeydown = "num2()">2</button></td>
+                <td class="frameDecor"><button class="button" onkeydown = "num3()">3</button></td>
+                <td class="frameDecor"><button class="button" onkeydown = "plus()">+</button></td>
+            </tr>
+            <tr class="frameDecor">
+                <td class="frameDecor"></td>
+                <td class="frameDecor"><button class="button" onkeydown = "num0">0</button></td>
+                <td class="frameDecor"></td>
+                <td class="frameDecor"><button class="button" onkeydown = "equal">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+
+</html>
